@@ -19,7 +19,6 @@ var grid = new ej.grids.Grid({
     function toolbarClick(args) {
         switch (args.item.text) {
             case 'PDF Export':
-                debugger;
                 var pdfExportProperties = {
                     dataSource: hierarchyOrderdata.slice(0, 5),
                     query: gridInstance.getDataModule().generateQuery(true),
@@ -27,7 +26,6 @@ var grid = new ej.grids.Grid({
                 gridInstance.pdfExport(pdfExportProperties);
                 break;
             case 'Excel Export':
-                debugger;
                 var excelExportProperties = {
                     dataSource: hierarchyOrderdata.slice(0, 5),
                     query: gridInstance.getDataModule().generateQuery(true),
